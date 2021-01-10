@@ -1,0 +1,477 @@
+body {
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: 300px 100px;
+}
+
+nav {
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 60px;
+    background: transparent;
+    font-family: 'Anton', sans-serif;
+    font-size: 19px;
+    color: white;
+}
+
+nav ul {
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+    position: sticky;
+    top: 0;
+}
+
+.navscroll {
+    justify-content: center;
+    box-shadow: 3px 3px 1rem rgba(0, 0, 0, .1);
+    background: white;
+    position: sticky;
+    top: 0px;
+    color: black;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.navscroll>ul>li>a:hover {
+    border-radius: 0px;
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid rgb(166, 166, 241);
+}
+
+nav>ul>li {
+    display: inline;
+    margin-left: 60px;
+}
+
+nav li>a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.ascroll {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.1)
+}
+
+nav li>a:hover {
+    font-size: 19px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+    background-color: rgba(0, 255, 255, 0.1);
+    border: 2px solid rgba(0, 255, 255, 0.1);
+}
+
+.Home img {
+    height: 100%;
+    width: 100%;
+}
+
+.quote {
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.containerbg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.bg {
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    border-radius: 4px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.close {
+    margin: 5px 10px 5px 10px;
+    text-align: right;
+    padding: 10px 10px 0 0;
+    color: white;
+    border: 1px solid black;
+}
+
+.contactsocial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    background: black;
+}
+
+.contactsocial ul {
+    display: flex;
+    list-style: none;
+}
+
+.contactsocial ul li {
+    margin: 0 40px 0 0;
+}
+
+.contactsocial ul li a .fab {
+    font-size: 6em;
+    color: white;
+}
+
+.contactsocial ul li::before {
+    font-family: fontAwesome;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 6em;
+    height: 0;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+}
+
+.contactsocial ul li:first-child a .fab {
+    border-top: 3px solid rgb(66, 103, 178);
+    padding: 4px;
+}
+
+.contactsocial ul li:nth-child(2) a .fab {
+    border-top: 4px solid skyblue;
+    padding: 4px;
+}
+
+.contactsocial ul li:nth-child(3) a .fa-linkedin-in {
+    border-top: 4px solid red;
+    padding: 4px;
+}
+
+.contactsocial ul li:first-child a .fab:hover {
+    color: rgb(102, 102, 236);
+    transition-duration: 0.3s;
+    border-top: none;
+    border-bottom: 3px solid rgb(66, 103, 178);
+}
+
+.contactsocial ul li:nth-child(2) a .fab:hover {
+    color: skyblue;
+    transition-duration: 0.3s;
+    border-top: none;
+    border-bottom: 3px solid skyblue;
+}
+
+.contactsocial ul li:nth-child(3) a .fa-linkedin-in:hover {
+    color: red;
+    transition-duration: 0.3;
+    border-top: none;
+    border-bottom: 3px solid red;
+}
+
+.Des_Me {
+    padding: 20 px;
+    margin-top: 60px;
+    margin: auto;
+    height: 200px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 15px;
+    box-shadow: 5px 6px rgba(80, 76, 76, 0.4);
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.Des_Me img:active {
+    height: 200px;
+    width: 100%;
+}
+
+.Timeline {
+    margin: 50px auto;
+    padding: 40px 0;
+    width: 1000px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+
+.Timeline .content {
+    margin: 0;
+    padding: 10;
+}
+
+.content p {
+    color: rgb(165, 156, 156);
+}
+
+.content {
+    background-color: rgb(95, 86, 86);
+    margin-top: 20px;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 13px;
+}
+
+.content h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+.content>h4 {
+    color: rgba(190, 155, 155, 0.1);
+    position: relative;
+    top: 100px;
+    left: 150px;
+    text-align: center;
+    font-size: 5em;
+    padding: 0;
+    letter-spacing: 2px;
+    transition-duration: 1000ms;
+}
+
+.content:hover h4 {
+    color: rgba(190, 155, 155, 0.5);
+    visibility: visible;
+    transition-duration: 500ms;
+    top: 0;
+}
+
+.content>h3 {
+    position: relative;
+    top: -80px;
+    font-size: 3em;
+    padding: 0;
+}
+
+.Timeline .content:nth-child(odd) {
+    float: left;
+    clear: both;
+}
+
+.Timeline .content:nth-child(even) {
+    float: right;
+    clear: both;
+}
+
+section {
+    clear: both;
+}
+
+.personal_Interests {
+    clear: both;
+    padding-top: 100px;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.personal_Interests_Header {
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(53, 68, 53, .5);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.personal_Interests_Items {
+    width: 50%;
+    margin: auto;
+}
+
+.personal_Interests h3 {
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(53, 68, 53, .5);
+    padding: 20px;
+}
+
+.personal_Interests_Items span {
+    font-size: 30px;
+    text-align: center;
+    background: rgba(158, 111, 111, 1);
+    padding: 20px;
+    margin-top: 10px;
+    animation: color-change 3s forwards infinite;
+}
+
+.personal_Interests_Items:hover span {
+    animation-play-state: paused;
+}
+
+@keyframes color-change {
+    0% {
+        background: rgba(158, 111, 111, 1);
+    }
+    20% {
+        background: linear-gradient( rgba(158, 111, 111, 0.8) 20%, rgba(158, 111, 111, 1) 80%);
+    }
+    40% {
+        background: linear-gradient( rgba(158, 111, 111, .6) 40%, rgba(158, 111, 111, .8) 60%);
+    }
+    60% {
+        background: linear-gradient( rgba(158, 111, 111, .4) 60%, rgba(158, 111, 111, .6) 40%);
+    }
+    80% {
+        background: linear-gradient( rgba(158, 111, 111, .2) 80%, rgba(158, 111, 111, .4) 20%);
+    }
+    100% {
+        background: linear-gradient( rgba(158, 111, 111, .2) 100%);
+    }
+}
+
+.personal_Interests_Items {
+    height: 0px;
+    display: flex;
+    flex-direction: column;
+    visibility: collapse;
+}
+
+.skills_container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.skills {
+    margin-left: 20px;
+    background-color: yellow;
+    width: 15%;
+    height: 170px;
+    transition-property: all;
+}
+
+.skills_Des {
+    visibility: collapse;
+}
+
+.skills:hover .skills_img {
+    padding: auto;
+    position: relative;
+    margin: 5px auto;
+    border-radius: 50px;
+    background-color: white;
+    width: 10%;
+    height: 40px;
+    border-color: black;
+    transition-duration: 3s;
+}
+
+.skills:hover .skills_img>i {
+    width: 20%;
+    font-size: 2em;
+    margin: 3px;
+}
+
+.skills:hover .skills_Des {
+    margin: 40px 0 0 60px;
+    visibility: visible;
+}
+
+.skills i {
+    font-size: 6em;
+}
+
+.skills .skills_img {
+    margin: 40px 0 0 100px;
+}
+
+#work {
+    margin-top: 100px;
+}
+
+#work p {}
+
+article {
+    width: 50%;
+    margin: 200px auto;
+}
+
+article aside {
+    display: flex;
+    justify-content: center;
+    margin-right: 150px;
+}
+
+article aside ul {
+    list-style: none;
+}
+
+#Resume header {
+    width: 50%;
+    margin: 100px auto;
+}
+
+#Resume>article>dl {
+    width: 50%;
+    margin: 90px auto;
+    font-size: 2em;
+    padding-left: 10px;
+    border-left: 2px solid black;
+}
+
+footer {
+    background-color: rgb(241, 241, 214);
+    height: 100px;
+}
+
+footer .container {
+    width: 50%;
+    margin: 90px auto;
+    margin-left: 700px;
+    font-size: 2em;
+}
+
+footer .container i {
+    margin-left: 40px;
+}
+
+footer .container>a i:first-child:hover {
+    color: rgb(168, 168, 235);
+}
+
+footer .container i:nth-child(2):hover {
+    color: red
+}
+
+footer .container>a i:nth-child(3):hover {
+    color: rgb(168, 168, 235);
+}
+
+footer .container>a i:nth-child(4):hover {
+    color: yellow
+}
+
+.footer span {
+    margin-right: 150px;
+}
+
+dl dt {
+    color: rgb(185, 152, 152);
+}
+
+dl dd {
+    color: rgb(32, 32, 32);
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
